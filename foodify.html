@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodify - Discover Recipes</title>
+    <link rel="stylesheet" href="/foodify.css">
+</head>
+<body>
+    <header>
+        <h1>Foodify</h1>
+        <nav>
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="favorites-link">Favorites</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recipe-list" class="page">
+            <h2>Trending Recipes</h2>
+            <input type="text" id="search-bar" placeholder="Search recipes...">
+            <div id="recipes-container">
+                <!-- Recipes will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="recipe-detail" class="page hidden">
+            <button id="back-btn">Back</button>
+            <div id="recipe-detail-content">
+                <!-- Detailed recipe info will be displayed here -->
+            </div>
+        </section>
+
+        <section id="favorites" class="page hidden">
+            <h2>Your Favorites</h2>
+            <ul id="favorites-list">
+                <!-- Favorites will be dynamically displayed here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Foodify. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
